@@ -1,0 +1,6 @@
+# render_template
+
+render_template('filename', key=value)을 통한 값 전달이 가능하다.
+해당 값은 jinja2를 이용하여 접근 가능하다.
+
+(예시) <h3>{{ key }} </h3>
