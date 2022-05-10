@@ -1,0 +1,7 @@
+#css_notWorking
+
+When : CSS가 바로 적용되지 않을때
+
+Why : 브라우저가 CSS 등 static 파일들을 효율적으로 사용하기 위해 캐시메모리에 저장하고 있기 때문
+
+Solution : Ctrl+Shift+R(윈도우 기준) 을 사용하면 해결된다.
