@@ -1,0 +1,9 @@
+#jinja_url
+
+1) URL GET 파라미터(/detail?word_give=test)
+request.args.get('word_give')
+
+2) URL일부를 변수로 받기(/detail/<keyword>)
+def detail(keyword){
+  print(keyword)
+}
