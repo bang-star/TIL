@@ -1,0 +1,13 @@
+#jinja2 value use
+
+1. 값 전달(Server → Client)
+words = list(db.wrods.find({}, {"_id":False}))
+data = {"a","b"}
+return render_template("index.html", words=words, data=data);
+
+2. 값 저장(Client - html 파일)
+let words = {{ words || tojson }}
+let initdata = {{ data|| safe || tojson }}
+
+3. 값 아용(외부 JS 파일)
+console.log(initdata);
