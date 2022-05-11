@@ -1,0 +1,8 @@
+# merge_conflict
+
+merge_conflict
+- Merge 하는 과정에서 같은 파일이 동일한 부분이 수정된게 발견되면 발생한다.
+- Git은 충돌을 파악할 수 있도록 파일 내용을 고쳐서 충돌 내역을 보여준다.
+- conflict를 수정하고 merge commit하면 된다.
+- 수정 시 새로운 내용을 추가하면 안된다.
+

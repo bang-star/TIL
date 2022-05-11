@@ -1,0 +1,7 @@
+# git_checkout
+
+checkout
+- 작업할 branch를 바꾸는 것을 의미한다.
+- main -> feature/chat 전환
+
+
