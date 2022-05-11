@@ -1,0 +1,8 @@
+# git_tracking 
+
+tracking 
+- 로컬 repo와 원격 repo의 특정 브랜치를 연결해주는 것
+- push와 pull은 기본적으로 tracking되는데 기준 값이 branch이다.
+- branch를 기준으로 commit 내역을 반영한다.
+
+
