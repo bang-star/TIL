@@ -1,0 +1,4 @@
+#strip method
+
+해당 메소드는 텍스트의 앞뒤에 있는 빈 칸을 지워준다.
+Ex) likes_tag.text.strip()
