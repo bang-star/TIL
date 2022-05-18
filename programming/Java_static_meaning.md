@@ -11,7 +11,7 @@
 <br />
 
 ## 정적 멤버의 생성
-![정적 멤버 이미지] (https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fefeoz2%2FbtqDsOt6are%2F0masSctPvO9gk0PkTY7tSK%2Fimg.png)
+![다운로드](https://user-images.githubusercontent.com/63120360/168941814-e29cf109-5dde-4d5a-861d-3102895d9cf0.png)
 
 - Static 키워드를 통해 생성된 정적 멤버들은 Heap영억이 아닌 Static 영역에 할당됩니다. 
 - Static 영역에 할당된 메모리는 모든 객체가 공유하여 하나의 멤버를 어디서든지 참조할 수 있는 장점을 가지지만 GC(Garbage Collector)의 관리 영역 밖에 존재하기에 Static 영역에 있는 멤버들은 프로그램의 종료시까지 메모리가 할당된 채로 존재하게 됩니다.
