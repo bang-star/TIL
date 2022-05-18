@@ -35,6 +35,8 @@
   - 정적 전역변수(static global variable)는 자신이 선언된 소스 파일에서만 사용할 수 있고, 외부에서는 가져다 쓸 수 없다.
   - 전역변수에 static을 붙이면 변수의 범위를 파일 범위로 제한하는 효과를 내기 때문이다.
 
+<img width="370" alt="캡처" src="https://user-images.githubusercontent.com/63120360/168941885-7e11f1a4-6860-4b29-8bd0-4f1e1700c5ce.PNG">
+
 <hr />
 
 ## Java 정적 변수, 지역변수, 전역변수 차이
@@ -89,6 +91,7 @@
   
   - 혹은 모든 인스턴스가 공통된 변수를 공유하는 개념으로 실제 전역변수와 비슷한 용도로 사용할 거면 클래스변수(static)로 대체하는 것이 나을 듯함.
 
+<img width="462" alt="전역 변수" src="https://user-images.githubusercontent.com/63120360/168941915-0cf8dd51-de14-42ef-872a-33a7111c23f9.PNG">
 
   <br />
   <hr />
