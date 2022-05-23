@@ -3,7 +3,9 @@
 ## 1. Garbage Collection, GC
 
 <br />
+
 ![image](https://user-images.githubusercontent.com/63120360/169747653-56f05f4a-3ce5-4cad-9c31-25e466f01e30.png)
+
 <br />
 
   1. Minor GC
