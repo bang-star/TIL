@@ -24,7 +24,10 @@
   3. 자바 컴파일러가 자바 소스코드를 읽어들여 자바 바이트코드로 변환시킨다.(java -> class파일)
   4. Class Loader를 통해 class파일들을 JVM으로 로딩한다.
   5. 해석된 바이트코드는 Runtime Data Areas에 배치되어 Thread Synchronization과 GC같은 관리작업을 수행한다.
-  - 이미지 넣기
+
+<br />
+![image](https://user-images.githubusercontent.com/63120360/169747391-a6612994-1a4f-4504-989e-c376a1674145.png)  
+<br />
 
 ## 5. JVM 구성
   1. Class Loader(클래스 로더)
@@ -56,7 +59,10 @@
 
 ## 6. Runtime Data Area
     - 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
-    - 이미지 넣기
+   
+<br />   
+![image](https://user-images.githubusercontent.com/63120360/169747448-4de97a06-0096-43b6-8969-f359bb4c3f42.png)
+<br />
 
     1. PC Register
     - Thread가 시작될떄 생성되며 생성될 때마다 생성되는 공간으로 스레드마다 하나씩 존재한다.
@@ -106,7 +112,9 @@
     - class area 영역에 올라온 클래스들만 객체로 생성할 수 있다.
     - 힙은 크게 세부분으로 나눌 수 있다.
 
-        // 이미지
+<br />
+![image](https://user-images.githubusercontent.com/63120360/169747553-318d8a92-9942-43bd-98f7-edc04055e905.png)
+<br />
 
         1. Permanent Generation
         - 생성된 객체들의 정보의 주소값이 저장된 공간이다.
