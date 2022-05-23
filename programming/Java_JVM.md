@@ -26,7 +26,9 @@
   5. 해석된 바이트코드는 Runtime Data Areas에 배치되어 Thread Synchronization과 GC같은 관리작업을 수행한다.
 
 <br />
+
 ![image](https://user-images.githubusercontent.com/63120360/169747391-a6612994-1a4f-4504-989e-c376a1674145.png)  
+
 <br />
 
 ## 5. JVM 구성
@@ -61,7 +63,9 @@
     - 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
    
 <br />   
+
 ![image](https://user-images.githubusercontent.com/63120360/169747448-4de97a06-0096-43b6-8969-f359bb4c3f42.png)
+
 <br />
 
     1. PC Register
@@ -113,7 +117,9 @@
     - 힙은 크게 세부분으로 나눌 수 있다.
 
 <br />
+
 ![image](https://user-images.githubusercontent.com/63120360/169747553-318d8a92-9942-43bd-98f7-edc04055e905.png)
+
 <br />
 
         1. Permanent Generation
