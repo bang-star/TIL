@@ -1,7 +1,13 @@
 # Garbage Collection
 
 ## 1. Garbage Collection, GC
-  // 이미지
+
+<br />
+
+![image](https://user-images.githubusercontent.com/63120360/169747653-56f05f4a-3ce5-4cad-9c31-25e466f01e30.png)
+
+<br />
+
   1. Minor GC
   - 새로 생성된 대부분의 객체는 Eden 영역에 위치한다.
   - Eden 영역에서 GC가 한 번 발생한 후 살아남은 객체는 Survivor 영역 중 하나로 이동된다.
@@ -20,7 +26,12 @@
   - Garbage Collector는 힙 내의 객체 중에서 Garbage를 찾아내고 찾아낸 Garbage를 처리해서 힙의 메모리를 회수한다.
   - 참조되고 있지 않은 객체를 Garbage라고 하며 객체가 Garbage가 아닌지 판단하기 위해서 reachability로 판단한다.
   - 하나의 객체는 다른 객체를 참조하고, 다른 객체는 또 다른 객체를 참조할 수 있기 때문에 참조 사슬이 형성이 되는데, 이 참조 사슬 중 최초에 참조한것을 Root Set이라고 칭한다.
-  // 이미지
+
+<br />
+
+![image](https://user-images.githubusercontent.com/63120360/169747681-ca83e983-b200-4969-bf84-7de96c79258b.png)
+
+<br />
 
   * 1 : 힙 내의 다른 객체 의한 참조
   * 2 : Java 스택, 즉 Java 메서드 실행 시에 사용하는 지역변수와 파라미터들에 의한 참조
