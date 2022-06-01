@@ -55,8 +55,6 @@
     - 주로 로그인 정보 저장으로 사용한다.
     - 세션은 쿠기가 필요하다.
 
-![image]()
-<image src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRwwHw%2FbtrDyndrveC%2FlOlrNzEKMl0Y55VgkdBm4K%2Fimg.png" width="30%"/>
 
-<img src="https://images.velog.io/images/post/99bd5126-8640-497c-ad81-0dd2738b50ad/image.png" width="30%" height="30">
+<image src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRwwHw%2FbtrDyndrveC%2FlOlrNzEKMl0Y55VgkdBm4K%2Fimg.png" width="50%"/>
 
