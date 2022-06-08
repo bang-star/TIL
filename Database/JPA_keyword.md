@@ -44,4 +44,4 @@ JPA에서는 어떤 역할을 할까??
 <br />
 
 ## 참고
-[JPA CORE FEATURE]()
+1. [JPA CORE FEATURE](https://github.com/bang-star/TIL/blob/main/Database/JPA_Core_features.md)
