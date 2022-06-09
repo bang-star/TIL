@@ -102,3 +102,12 @@ HTTP는 Connectless 방식으로 작동한다. 서버에 연결하고, 요청해
 - 프로토콜과 응답코드 : 웹 브라우저가 사용하는 프로토콜, 서버의 응답 상태 (1xx~5xx), 응답 메시지를 보여준다
 - Set-Cookie : 웹 브라우저에게 쿠키 생성을 요청 (예) Set-Cookie: UserID=tester; Max-Age=3600; Version=1
 - Content-Type : 응답에 바디가 있는 경우 그 포맷 (예) Content-Type: text/html; charset=utf-8
+
+
+<br />
+<hr />
+<br />
+
+## 참고
+1. [HTTP Status Code](https://github.com/bang-star/TIL/blob/main/web/HTTP_status_code.md)
+2. [HTTP Message](https://github.com/bang-star/TIL/blob/main/web/HTTP%20message.md)
