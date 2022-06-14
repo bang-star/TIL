@@ -220,10 +220,6 @@ public class WebConfig implements WebMvcConfigurer {
 <hr />
 <br />
 
-<br />
-<hr />
-<br />
-
 ## 출처
 
  1. [위키백과](https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8_%EC%B6%9C%EC%B2%98_%EB%A6%AC%EC%86%8C%EC%8A%A4_%EA%B3%B5%EC%9C%A0)
