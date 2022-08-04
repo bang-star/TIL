@@ -13,3 +13,5 @@
      - 나의 해결방법은 4번이이었다.
 
  - Maven View에서 Lifecycle - package을 통해 패키지를 설치한 후에 Build하면 된다.
+
+ - setting - Build, Excution, Deployment - BUild Tools - Maven에서 Use Maven wrapper로 되어 Maven home path를 Bundled(Maven 3)로 변경하여 apply
