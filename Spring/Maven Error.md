@@ -13,3 +13,9 @@
      - 나의 해결방법은 4번이이었다.
 
  - Maven View에서 Lifecycle - package을 통해 패키지를 설치한 후에 Build하면 된다.
+
+## 참고
+ 
+ - [IntelliJ에서 Maven 프로젝트 Package Build 하기](https://atoz-develop.tistory.com/entry/IntelliJ%EC%97%90%EC%84%9C-Maven-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Package-Build-%ED%95%98%EA%B8%B0)
+
+ - ![No valid Maven installation found](https://s-yeonjuu.tistory.com/26)
