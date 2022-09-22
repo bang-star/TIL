@@ -214,6 +214,18 @@
 
     - 순서가 없고, 키(Key)는 유일성을 가지고, 값(Value)의 중복은 허용한다.
 
+    - 중복 : 중복 불가 , index가 순차적 Key로 유일성을 가짐
+    
+    - 순서 : 보장 불가 
+    
+    - 정렬 : 정렬 불가 
+    
+    - 동기화 (Thread-Safe) : 동기화 불가능, 불안전함
+
+    - 삽입 / 삭제 / 조회 연산이 광장히 빠르지만, 순서를 보장하지 않고, 정렬이 불가하다는 단점을 가지고 있다.
+
+      - 이러한 단점을 보완하기 위해서 자바에서는 HashMap , LinkedHashMap, TreeMap 세 가지의 클래스를 지원한다.
+
  - 종류 
         
      - Hashtable
@@ -222,14 +234,146 @@
         
         - null불가
 
+        - 과거에 사용하던 클래스로 현재는 더 이상 지원하지 않는 클래스이니, 사용을 지양
+
     - HashMap
     
         - 중복과 순서가 허용되지 않으며 null값이 올 수 있다.
 
+        - 해시함수를 이용한 Map임
+        
+        - 삽입 / 삭제 / 조회 연산의 O(1)을 보장하는 아주 빠른 자료구조
+
+        - 삽입 데이터의 순서를 보장하지 않음
+
+        - 정렬이 불가함
+
+        - 주요 메소드
+
+          ![image](https://user-images.githubusercontent.com/22147400/191766968-f683bb31-44b8-4070-b14b-6a4e334ca07f.png)
+
+          <br />
+
+          ```Java
+          import java.util.HashMap;
+          import java.util.HashSet;
+          import java.util.Map;
+
+          public class HashMapExam {
+            public static void main(String[] args) {
+              // 객체생성
+              HashMap<Integer,Integer> map = new HashMap<>();
+
+              // put() 삽입연산으로 초기화
+              for (int i = 0; i < 10; i++)
+                map.put(i, i*i);
+              
+              // KeySet()
+              HashSet<Integer> set = new HashSet<Integer>(map.keySet());
+              System.out.print("keySet() : ");
+              for(int i : set)
+                System.out.print(i+" ");
+              
+              // get() 조회
+              System.out.println("\n\n4의 value : " + map.get(4)+"\n");
+              
+              // remove() 삭제
+              System.out.println("remove(4) : " + map.remove(4)+"\n");
+
+              // getOrDefault - 가져올때 값이 없으면 Default값을 가져옴
+              System.out.println("map.getOrDefault(4, 16) : " + map.getOrDefault(4, 16)+"\n");
+
+              // containsKey
+              System.out.println("containsKey(4) : " + map.containsKey(4)+"\n");
+              
+              // containsValue
+              System.out.println("containsValue(16) : "+ map.containsValue(16)+"\n");
+              
+              // size() 크기
+              System.out.println("size : " + map.size()+"\n");
+              
+              //replace() 변경 , put도 가능
+              map.replace(5, 5);
+              System.out.println("map.replace 수행후  get(5) : " + map.get(5)+"\n");
+              
+              // 응용 put은 변경에도 쓰임, getOrDefault는 초기화에 많이쓰임
+              map.put(4, map.getOrDefault(4, 16));		// key 5에  4가 가지고 있는값을 얻어와 넣어주려하는데 4가 없으면 16이란 값을 넣어주는경우
+              System.out.println("getOrDefault로 4 다시 생성 : " + map.get(4) +"\n");
+              
+              // Map의 단일객체 Entry 
+              System.out.println("Map.Entry<>로 받는  entrySet() 메소드");
+              for(Map.Entry<Integer,Integer> m : map.entrySet()) {
+                map.put(m.getKey(), m.getKey()*m.getValue()); // 세제곱값으로 초기화		
+                System.out.print(map.get(m.getKey())+" ");
+              }
+              System.out.println("\n");
+              
+              // clear 모두제거 
+              map.clear();
+              System.out.println("clear() 수행\n");
+              
+              // isEmpty() 비었는지 확인
+              System.out.println("isEmpty? : " + map.isEmpty()+"\n");		
+            }
+          }
+          ```
+
     - TreeMap
         
         - 정렬된 순서대로 키(Key)와 값(Value)을 저장하여 검색이 빠름
+
+        - 삽입 / 삭제가 굉장히 느리지만, 삽입순서를 보장함
+        
+        - Map이지만 유일하게 정렬이 가능함.
+
+        - 주요 메소드
+
+          - Map.Entry 인터페이스는 Map 인터페이스의 내부 인터페이스로 맵에 저장되는 엔트리의 조작을 위한 메소드가 정의되어 있습니다. 
+
+          - HashMap의 모든 메소드를 사용가능하므로 생략하고, TreeMap에서만 사용가능한 메소드이다.
+
+            ![image](https://user-images.githubusercontent.com/22147400/191767318-bea28f85-8e40-4de4-a36d-c7b5a03b7e8b.png)
+
+            ```Java
+            import java.util.HashSet;
+            import java.util.Map;
+            import java.util.TreeMap;
+            public class TreeMapExam {
+              public static void main(String[] args) {
+                // TreeMap 객체생성
+                TreeMap<Integer,Integer> map = new TreeMap<>();
+
+                // 삽입과 동시에 정렬되는 자료구조
+                for (int i = 10; i > 0; i--)
+                  map.put(i, i*i);					//100,91,64,...9,4,1
+                // 출력
+                System.out.println("삽입과 동시에 정렬됨 : ");
+                for(int i : map.keySet())
+                  System.out.print(map.get(i)+" ");		//1,4,9,...64,91,100
+                
+                // 역순 출력
+                System.out.println("\n\n역순 출력 : ");
+                for(int i : map.descendingKeySet())
+                  System.out.print(map.get(i)+" ");		//100,91,64,...9,4,1
+                
+                
+                System.out.println("\n\n최소값을 받아오는 다양한 메소드의  사용 : ");
+                System.out.print(map.pollFirstEntry().getKey()+" ");
+                System.out.print(map.firstEntry().getKey()+" ");
+                Map.Entry<Integer,Integer> m = map.firstEntry();
+                System.out.print(m.getValue()+" ");
+                System.out.print(map.firstKey()+" ");
+              }
+            }
+            ```
  
+     - LinkedHashMap
+
+        - 삽입 / 삭제가 Map보다 느림
+
+        - 삽입 순서를 보장함
+
+        - 정렬은 불가함
 
 <br />
 <hr />
